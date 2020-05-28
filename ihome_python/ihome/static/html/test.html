@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" name="button" onclick="alert('ok！');">
+<!--<script type="text/javascript">-->
+    <!--alert('ok！');-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+<!--var iNum = 123;-->
+<!--var sTr = 'abc123';-->
+<!--function fnAlert(){-->
+    <!--alert(sTr);-->
+<!--};-->
+<!--fnAlert();-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+
+<!--// 单行注释-->
+<!--var iNum = 123;-->
+<!--/*-->
+    <!--多行注释-->
+    <!--1、...-->
+    <!--2、...-->
+<!--*/-->
+<!--var sTr = 'abc123';-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--// html对象-->
+    <!--var oDiv = document.getElementById('div1');-->
+<!--</script>-->
+<!--....-->
+<!--<div id="div1">这是一个div元素</div>-->
+
+<!--<script type="text/javascript">-->
+
+    <!--window.onload = function(){-->
+        <!--var oInput = document.getElementById('input1');-->
+        <!--var oA = document.getElementById('link1');-->
+        <!--// 读取属性值-->
+        <!--var sValue = oInput.value;-->
+        <!--var sType = oInput.type;-->
+        <!--var sName = oInput.name;-->
+        <!--var sLinks = oA.href;-->
+        <!--// 写(设置)属性-->
+        <!--oA.style.color = 'red';-->
+        <!--oA.style.fontSize = sValue;-->
+    <!--}-->
+
+<!--</script>-->
+
+
+
+<!--<input type="text" name="setsize" id="input1" value="20px">-->
+<!--<a href="http://www.itcast.cn" id="link1">传智播客</a>-->
+
+<!--<script type="text/javascript">-->
+
+    <!--window.onload = function(){-->
+        <!--var oInput1 = document.getElementById('input1');-->
+        <!--var oInput2 = document.getElementById('input2');-->
+        <!--var oA = document.getElementById('link1');-->
+        <!--// 读取属性-->
+        <!--var sVal1 = oInput1.value;-->
+        <!--var sVal2 = oInput2.value;-->
+        <!--// 写(设置)属性-->
+        <!--// oA.style.val1 = val2; 没反应-->
+        <!--oA.style[sVal1] = sVal2;-->
+    <!--}-->
+
+<!--</script>-->
+
+<!--......-->
+
+<!--<input type="text" name="setattr" id="input1" value="fontSize">-->
+<!--<input type="text" name="setnum" id="input2" value="30px">-->
+<!--<a href="http://www.itcast.cn" id="link1">传智播客</a>-->
+
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--var oDiv = document.getElementById('div1');-->
+        <!--//读取-->
+        <!--var sTxt = oDiv.innerHTML;-->
+        <!--alert(sTxt);-->
+        <!--//写入-->
+        <!--oDiv.innerHTML = '<a href="http://www.itcast.cn">传智播客<a/>';-->
+    <!--}-->
+<!--</script>-->
+
+<!--......-->
+
+<!--<div id="div1">这是一个div元素</div>-->
+
+<!--<script type="text/javascript">-->
+    <!--fnAlert();       // 弹出 hello！-->
+    <!--alert(iNum);  // 弹出 undefined-->
+    <!--function fnAlert(){-->
+        <!--alert('hello!');-->
+    <!--}-->
+    <!--var iNum = 123;-->
+    <!--alert(iNum);-->
+<!--</script>-->
+
+<!--行间事件调用函数   -->
+<!--<script type="text/javascript">-->
+    <!--function fnAlert(){-->
+        <!--alert('ok!');-->
+    <!--}-->
+<!--</script>-->
+<!--......-->
+<!--<input type="button" name="" value="弹出" onclick="fnAlert()">-->
+
+<!-- 提取行间事件 -->
+<!--<script type="text/javascript">-->
+
+<!--window.onload = function(){-->
+    <!--var oBtn = document.getElementById('btn1');-->
+    <!--/*-->
+    <!--oBtn.onclick = fnAlert;-->
+    <!--function fnAlert(){-->
+        <!--alert('ok!');}-->
+    <!--*/-->
+    <!---->
+    <!--// 直接将匿名函数赋值给绑定的事件-->
+
+    <!--oBtn.onclick = function (){-->
+        <!--alert('ook!');-->
+    <!--}-->
+<!--}-->
+<!--</script>-->
+<!--......-->
+<!--<input type="button" name="" value="弹出1" id="btn1">-->
+
+<!--<script type="text/javascript">-->
+<!--function fnAdd(iNum01,iNum02){-->
+    <!--var iRs = iNum01 + iNum02;-->
+    <!--return iRs;-->
+    <!--alert('here!');-->
+<!--}-->
+
+<!--var iCount = fnAdd(3,4);-->
+<!--alert(iCount);  //弹出7-->
+<!--</script>-->
+
+<!--<script>-->
+<!--var aList = [1,2,3,4,1,3,4];-->
+<!--alert(aList.indexOf(1));-->
+
+<!--var aList = [1,2,3,4];-->
+<!--aList.unshift(5);-->
+<!--alert(aList); //弹出5,1,2,3,4-->
+<!--aList.shift();-->
+<!--alert(aList); // 弹出1,2,3,4-->
+<!--</script>-->
+
+<!--<script>-->
+  <!--var aList = [1,2,3,4];-->
+  <!--var len = aList.length;-->
+  <!--for(var i=0;i<len;i++)-->
+<!--{-->
+    <!--alert(aList[i])-->
+<!--}-->
+<!--</script>-->
+
+<!--<script>-->
+    <!--aList = [1,2,3,4];-->
+    <!--var i = 0;-->
+    <!--while (i < 4){-->
+    <!--alert(aList[i]);-->
+    <!--i++;}-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--var aLi = document.getElementsByTagName('li');-->
+        <!--// aLi.style.backgroundColor = 'gold'; // 出错！不能同时设置多个li-->
+        <!--alert(aLi.length);-->
+        <!--aLi[0].style.backgroundColor = 'gold';-->
+    <!--}-->
+<!--</script>-->
+
+<!--<ul>-->
+    <!--<li>1</li>-->
+    <!--<li>2</li>-->
+    <!--<li>3</li>-->
+    <!--<li>4</li>-->
+    <!--<li>5</li>-->
+    <!--<li>6</li>-->
+<!--</ul>-->
+
+<!--<script>-->
+    <!--var iNum01 = 12;-->
+    <!--var iNum02 = 24;-->
+    <!--var sNum03 = '12';-->
+    <!--var sTr = 'abc';-->
+    <!--alert(iNum01+iNum02);  //弹出36-->
+    <!--alert(iNum01+sNum03);  //弹出1212 数字和字符串相加等同于字符串相加-->
+    <!--alert(sNum03+sTr);     // 弹出12abc-->
+
+    <!--var sNum01 = '12';-->
+    <!--var sNum02 = '24';-->
+    <!--var sNum03 = '12.32';-->
+    <!--alert(sNum01+sNum02);  //弹出1224-->
+    <!--alert(parseInt(sNum01)+parseInt(sNum02))  //弹出36-->
+    <!--alert(sNum03)   //弹出字符串12 将字符串小数转化为数字整数-->
+
+
+<!--var sNum03 = '12.32'-->
+<!--alert(parseFloat(sNum03));  //弹出 12.32 将字符串小数转化为数字小数-->
+
+<!--var sTr = "abcdefgh";-->
+<!--var iNum = sTr.indexOf("z");-->
+<!--alert(iNum); //弹出2-->
+
+<!--var sTr = '2017-4-22';-->
+<!--var aRr = sTr.split("-");-->
+<!--var aRr2= sTr.split("");-->
+
+<!--alert(aRr);  //弹出['2017','4','2']-->
+<!--alert(aRr2);  //弹出['2','0','1','7','-','4','-','2','2']-->
+
+<!--var sId = "#div1";-->
+<!--var sTr = sId.charAt(0);-->
+<!--alert(sTr); //弹出 #-->
+
+
+<!--var str = 'asdfj12jlsdkf098';-->
+<!--var str2 = str.split('').reverse().join('');-->
+
+<!--alert(str2);-->
+
+<!--if('3'==3)-->
+<!--{-->
+    <!--alert('相等');-->
+<!--}-->
+
+<!--// 弹出'相等'-->
+<!--alert('10'-3);  // 弹出7-->
+
+<!--alert( parseInt('123abc') );  // 弹出123-->
+<!--alert( parseInt('abc123') );  // 弹出NaN-->
+
+
+<!--</script>-->
+
+<!--<script>-->
+    <!--/*-->
+    <!--定时器：-->
+    <!--setTimeout  只执行一次的定时器-->
+    <!--clearTimeout 关闭只执行一次的定时器-->
+    <!--setInterval  反复执行的定时器-->
+    <!--clearInterval 关闭反复执行的定时器-->
+
+<!--*/-->
+<!--// 几秒之后执行myalert, 2000毫秒-->
+<!--&lt;!&ndash;var time1 = setTimeout(myalert, 3000);&ndash;&gt;-->
+<!--var time2 = setInterval(myalert,2000);-->
+
+
+<!--clearInterval(time2);-->
+
+<!--function myalert(){-->
+    <!--alert('ok!');-->
+<!--}-->
+<!--&lt;!&ndash;clearTimeout(time1);&ndash;&gt;-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--var oDiv = document.getElementById('div1');-->
+        <!--function timego(){-->
+            <!--var now = new Date();-->
+            <!--var year = now.getFullYear();-->
+            <!--var month = now.getMonth()+1;-->
+            <!--var date = now.getDate();-->
+            <!--var week = now.getDay();-->
+            <!--var hour = now.getHours();-->
+            <!--var minute = now.getMinutes();-->
+            <!--var second = now.getSeconds();-->
+            <!--var str = '当前时间是：'+ year + '年'+month+'月'+date+'日 '+toweek(week)+' '+todou(hour)+':'+todou(minute)+':'+todou(second);-->
+            <!--oDiv.innerHTML = str;-->
+        <!--}-->
+        <!--timego();-->
+        <!--setInterval(timego,1000);-->
+    <!--}-->
+
+    <!--function toweek(n){-->
+        <!--if(n==0)-->
+        <!--{-->
+            <!--return '星期日';-->
+        <!--}-->
+        <!--else if(n==1)-->
+        <!--{-->
+            <!--return '星期一';-->
+        <!--}-->
+        <!--else if(n==2)-->
+        <!--{-->
+            <!--return '星期二';-->
+        <!--}-->
+        <!--else if(n==3)-->
+        <!--{-->
+            <!--return '星期三';-->
+        <!--}-->
+        <!--else if(n==4)-->
+        <!--{-->
+            <!--return '星期四';-->
+        <!--}-->
+        <!--else if(n==5)-->
+        <!--{-->
+            <!--return '星期五';-->
+        <!--}-->
+        <!--else-->
+        <!--{-->
+            <!--return '星期六';-->
+        <!--}-->
+        <!--var oDiv2 = document.getElementById('div2');-->
+    <!--oDiv2.innerHTML = str(toweek(1))-->
+    <!--}-->
+
+
+
+    <!--function todou(n){-->
+        <!--if(n<10)-->
+        <!--{-->
+            <!--return '0'+n;-->
+        <!--}-->
+        <!--else-->
+        <!--{-->
+            <!--return n;-->
+        <!--}-->
+    <!--}-->
+    <!--var oDiv3 = document.getElementById('div3');-->
+    <!--oDiv3.innerHTML = str(todou(11))-->
+<!--</script>-->
+<!--......-->
+<!--<div id="div1"></div>-->
+<!--<div id="div2"></div>-->
+<!--<div id="div3"></div>-->
+
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--var oDiv = document.getElementById('div1');-->
+        <!--function timeleft(){-->
+            <!--var now = new Date();-->
+            <!--var future = new Date(2016,8,12,24,0,0);-->
+            <!--var lefts = parseInt((future-now)/1000);-->
+            <!--var day = parseInt(lefts/86400);-->
+            <!--var hour = parseInt(lefts%86400/3600);-->
+            <!--var min = parseInt(lefts%86400%3600/60);-->
+            <!--var sec = lefts%60;-->
+            <!--str = '距离2016年9月12日晚24点还剩下'+day+'天'+hour+'时'+min+'分'+sec+'秒';-->
+            <!--oDiv.innerHTML = str;-->
+        <!--}-->
+        <!--timeleft();-->
+        <!--setInterval(timeleft,1000);-->
+    <!--}-->
+
+<!--</script>-->
+<!--......-->
+<!--<div id="div1"></div>-->
+
+<!--<script type="text/javascript">-->
+    <!--//全局变量-->
+    <!--var a = 12;-->
+    <!--function myalert()-->
+    <!--{-->
+        <!--//局部变量-->
+        <!--var b = 23;-->
+        <!--alert(a);-->
+        <!--alert(b);-->
+    <!--}-->
+    <!--myalert(); //弹出12和23-->
+    <!--alert(a);  //弹出12-->
+    <!--alert(b);  //出错-->
+<!--</script>-->
+
+<!--<script>-->
+    <!--!function myalert(){-->
+    <!--alert('hello!');-->
+<!--}()-->
+
+<!-- ~function myalert(){-->
+    <!--alert('hello!');-->
+<!--}() -->
+
+<!--(function myalert(){-->
+    <!--alert('hello!');-->
+<!--})()-->
+<!--</script>-->
+<!--<script>-->
+
+<!--alert(window.location.href ) //获取或者重定url地址-->
+<!--alert(window.location.search) //获取地址参数部分-->
+<!--alert(window.location.hash )//获取页面锚点或者叫哈希值-->
+<!--</script>-->
+<!--<div></div>-->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+
+  </head>
+
+  <script>
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //       $("p").hide();
+    //     });
+    //   });
+      </script>
+
+      <!-- <script>
+          $(function(){
+        $("button").click(function(){
+          $("p").hide();
+        });
+      });
+      </script> -->
+
+      <!-- <script>
+          $(function(){
+            // var $div = $('#div1');
+            $("div1").css("width","30px");
+$("div").css("height","30px");
+$("div").css({fontSize:"30px",color:"red"});
+            // var $div2 = $('#div2');
+            // alert($div1.length); // 弹出1
+            // alert($div2.length); // 弹出0
+
+            
+          })
+      </script> -->
+
+      <script>
+//           var $li = $('.list li');
+// alert($li.index()); // 弹出1
+
+$(function(){
+//     $('btn').click(function(){
+
+// $('#div1').fadeIn(5000,'swing',function(){
+//     alert('done!');
+// });})
+
+// $('#div1').animate({
+//     width:300,
+//     height:300
+// },3000,'swing',function(){
+//     alert('done!');
+// });
+
+// $('#div1').animate({
+//     width:'+=100',
+//     height:300
+// },1000,'swing',function(){
+//     alert('done!');
+// });
+// alert($(window).width());
+// $(window).height();
+
+// var $htm = $('#div1').html();
+
+// alert($htm);
+
+// $('#div1').html('这是div');
+// var $htm = $('#div1').html();
+// alert($htm);
+
+// var $name = $('#div1').prop('src')
+// alert($name);
+// var $name = $('#div1').prop({'name': '777888'})
+// alert($name)
+
+
+// $('.list li').each(function(i){
+//         $(this).html(i);
+//     })
+
+// $('#div1').bind('mouseover click', function(event) {
+//         alert($(this).html());
+//     });
+
+
+// var $box1 = $('.father');
+//     var $box2 = $('.son');
+//     var $box3 = $('.grandson');
+//     $box1.click(function() {
+//         alert('father');
+//     });
+//     $box2.click(function() {
+//         alert('son');
+//     });
+//     $box3.click(function(event) {
+//         alert('grandson');
+//         event.stopPropagation();
+
+//     });
+    // $(document).click(function(event) {
+    //     alert('grandfather');
+    // });
+
+    $ali = $('#list li');
+    $ali.click(function() {
+        $(this).css({background:'red'});
+    });
+
+
+
+
+
+
+});
+
+
+</script>
+
+<div class="father">father
+    <div class="son">son
+        <div class="grandson">grandson</div>
+    </div>
+</div>
+
+
+<ul id="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+  
+<p>&nbsp;&nbsp;&nbsp;&nbsp;HTML是 HyperText Mark-up Language 的首字母简写，意思是超文本标记语言，超
+    文本指的是超链接，<em>标记</em>指的是<i>标签</i>，是一种用来制作网页的语言，这种语言由一个个的
+    标签组成，用这种<b>语言制作的文件</b>保存的是<strong>一个文本文件</strong>，文件的扩展名为html或者htm。
+    </p>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;一个html文件就是一个网页，html文件用编辑器打开显示的是文本，可以用文本的方
+    式编辑它，如果用浏览器打开，浏览器会按照标签描述内容将文件渲染成网页，显示的网
+    页可以从一个网页链接跳转到另外一个网页。<br>
+    3 &lt; 5 <br>
+    10 &gt; 5 <br>
+
+    <img src="../images/avatar_cat.jpg" alt="产品图片" />
+
+
+    <a href="#">顶部</a> <!--  # 表示链接到页面顶部   -->
+<a href="http://www.itcast.cn/" title="跳转的传智播客网站">传智播客</a>
+<a href="2.html" target="_blank">测试页面2</a>
+
+
+<h3>前端三大块</h3>
+<dl>
+    <dt>html</dt>
+    <dd>负责页面的结构</dd>
+
+    <dt>css</dt>
+    <dd>负责页面的表现</dd>
+
+    <dt>javascript</dt>
+    <dd>负责页面的行为</dd>
+
+
+    <form action="http://www..." method="get">
+        <p>
+        <label>姓名：</label><input type="text" name="username" />
+        </p>
+        <p>
+        <label>密码：</label><input type="password" name="password" />
+        </p>
+        <p>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="0" /> 男
+        <input type="radio" name="gender" value="1" /> 女
+        </p>
+        <p>
+        <label>爱好：</label>
+        <input type="checkbox" name="like" value="sing" /> 唱歌
+        <input type="checkbox" name="like" value="run" /> 跑步
+        <input type="checkbox" name="like" value="swiming" /> 游泳
+        </p>
+        <p>
+        <label>照片：</label>
+        <input type="file" name="person_pic">
+        </p>
+        <p>
+        <label>个人描述：</label>
+        <textarea name="about"></textarea>
+        </p>
+        <p>
+        <label>籍贯：</label>
+        <select name="site">
+            <option value="0">北京</option>
+            <option value="1">上海</option>
+            <option value="2">广州</option>
+            <option value="3">深圳</option>
+        </select>
+        </p>
+        <p>
+        <input type="submit" name="" value="提交">
+        <!-- input类型为submit定义提交按钮  
+             还可以用图片控件代替submit按钮提交，一般会导致提交两次，不建议使用。如：
+             <input type="image" src="xxx.gif">
+        -->
+        <input type="reset" name="" value="重置">
+        </p>
+        </form>
+
+</dl>
+
+  <body>
+  <h2>This is a heading</h2>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <button id='btn', name='btn'>Click me</button>
+  <div src='divdivdiv' id="div1">这是一个div 这是一个div 这是一个div 这是一个div
+    这是一个div 这是一个div 这是一个div 这是一个div
+    这是一个div 这是一个div 这是一个div 这是一个div
+    这是一个div 这是一个div 这是一个div 这是一个div
+    这是一个div 这是一个div 这是一个div 这是一个div
+  </div>
+  
+
+</html>

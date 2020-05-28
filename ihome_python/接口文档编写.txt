@@ -1,0 +1,26 @@
+接口文档
+
+1 接口名字
+2 描述信息（接口是做什么的）
+3 url  (访问路径)
+4 请求方式
+5 传入参数
+6 返回值
+
+接口: get_image_code
+描述信息：获得图片验证码
+URL /api/v1.0/image_codes/<image_code_id>
+请求方式 get
+传入参数
+ 格式：路径参数（参数是查询字符串、请求体表单、json、xml）
+ 名字  类型  是否必须传入  说明
+ image_code_id str yes  验证图片编号
+
+返回值
+ 格式：正常 图片 异常 json
+ 名字  类型  是否必须传入  说明
+ errno str no 4001
+ erromsg str no 保存图片验证码失败
+
+ 实例：
+ "{'erro': 4001, 'erromsg': '保存图片验证码失败'}"
